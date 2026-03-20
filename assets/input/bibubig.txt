@@ -1,0 +1,1 @@
+sin(x) * cos(x) + ln(x ^ 2 + 1) - exp(x) / (x + 3) ^ 2 * tg(x) + arcsin(x) - arcctg(x ^ 3) + sh(x) * ch(x) - th(x) / cth(x) $

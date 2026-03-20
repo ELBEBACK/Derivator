@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "ast/node.h"
 #include "output/dump.h"
 
 #define COLOR_BG    "#1E1B2E"

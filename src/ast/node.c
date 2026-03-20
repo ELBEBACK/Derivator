@@ -1,8 +1,9 @@
+#ifdef DEBUG
 #include <stdio.h>
+
 #include "ast/node.h"
 
 
-#ifdef DEBUG
 void node_print(const Node* node) {
     if (!node) {
         printf("NULL");

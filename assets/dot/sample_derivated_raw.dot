@@ -1,0 +1,52 @@
+digraph AST {
+  graph [rankdir=TB splines=true bgcolor="#1E1B2E"];
+  node  [fontname="Courier", fontsize=16, margin=0.3, color="transparent", fontcolor="#4E2859"];
+  edge [arrowhead=normal, penwidth=2, arrowsize=0.5, color="#F4EFFF"]
+
+
+  n94662832866368 [label="+" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832866320 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832866272 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832866224 [label="cos" shape=box style="filled,rounded" fillcolor="#FF71CE"];
+  n94662832866176 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832866224 -> n94662832866176 
+  n94662832866272 -> n94662832866224 
+  n94662832866128 [label="1" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832866272 -> n94662832866128 
+  n94662832866320 -> n94662832866272 
+  n94662832866080 [label="+" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865984 [label="^" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865888 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832865984 -> n94662832865888 
+  n94662832865936 [label="2" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832865984 -> n94662832865936 
+  n94662832866080 -> n94662832865984 
+  n94662832866032 [label="1" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832866080 -> n94662832866032 
+  n94662832866320 -> n94662832866080 
+  n94662832866368 -> n94662832866320 
+  n94662832865840 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865792 [label="sin" shape=box style="filled,rounded" fillcolor="#FF71CE"];
+  n94662832865744 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832865792 -> n94662832865744 
+  n94662832865840 -> n94662832865792 
+  n94662832865696 [label="+" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865648 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865600 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865552 [label="2" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832865600 -> n94662832865552 
+  n94662832865504 [label="^" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832865456 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832865504 -> n94662832865456 
+  n94662832865408 [label="1" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832865504 -> n94662832865408 
+  n94662832865600 -> n94662832865504 
+  n94662832865648 -> n94662832865600 
+  n94662832865360 [label="1" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832865648 -> n94662832865360 
+  n94662832865696 -> n94662832865648 
+  n94662832865312 [label="0" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832865696 -> n94662832865312 
+  n94662832865840 -> n94662832865696 
+  n94662832866368 -> n94662832865840 
+}

@@ -173,6 +173,7 @@ static void tokenize_expression(TokenStream* dst_stream, const char* expr_buffer
                 TOKENIZE_FUNC(FUNC_ARCCTH, 6);
         } else {
             fprintf(stderr, "Undefined character '%c' at position %d\n", expr_buffer[dst_stream->position], dst_stream->position);
+            fprintf(stderr, "Be sure to end the expression with '$' character\n");
             exit(1);
         }
     }

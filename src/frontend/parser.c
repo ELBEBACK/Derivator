@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "ast/node.h"
 #include "ast/node_macros.h"
 #include "frontend/lexer.h"
 

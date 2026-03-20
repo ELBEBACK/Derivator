@@ -1,0 +1,36 @@
+digraph AST {
+  graph [rankdir=TB splines=true bgcolor="#1E1B2E"];
+  node  [fontname="Courier", fontsize=16, margin=0.3, color="transparent", fontcolor="#4E2859"];
+  edge [arrowhead=normal, penwidth=2, arrowsize=0.5, color="#F4EFFF"]
+
+
+  n94662832866800 [label="+" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832867136 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832867424 [label="cos" shape=box style="filled,rounded" fillcolor="#FF71CE"];
+  n94662832867472 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832867424 -> n94662832867472 
+  n94662832867136 -> n94662832867424 
+  n94662832867184 [label="+" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832867280 [label="^" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832867376 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832867280 -> n94662832867376 
+  n94662832867328 [label="2" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832867280 -> n94662832867328 
+  n94662832867184 -> n94662832867280 
+  n94662832867232 [label="1" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832867184 -> n94662832867232 
+  n94662832867136 -> n94662832867184 
+  n94662832866800 -> n94662832867136 
+  n94662832866848 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832867040 [label="sin" shape=box style="filled,rounded" fillcolor="#FF71CE"];
+  n94662832867088 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832867040 -> n94662832867088 
+  n94662832866848 -> n94662832867040 
+  n94662832866896 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832866992 [label="2" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832866896 -> n94662832866992 
+  n94662832866944 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832866896 -> n94662832866944 
+  n94662832866848 -> n94662832866896 
+  n94662832866800 -> n94662832866848 
+}

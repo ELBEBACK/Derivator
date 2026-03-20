@@ -1,0 +1,22 @@
+digraph AST {
+  graph [rankdir=TB splines=true bgcolor="#1E1B2E"];
+  node  [fontname="Courier", fontsize=16, margin=0.3, color="transparent", fontcolor="#4E2859"];
+  edge [arrowhead=normal, penwidth=2, arrowsize=0.5, color="#F4EFFF"]
+
+
+  n94662832863744 [label="*" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832863456 [label="sin" shape=box style="filled,rounded" fillcolor="#FF71CE"];
+  n94662832863408 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832863456 -> n94662832863408 
+  n94662832863744 -> n94662832863456 
+  n94662832863696 [label="+" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832863600 [label="^" shape=circle style=filled fillcolor="#E8C9F7"];
+  n94662832863504 [label="x" shape=ellipse style=filled fillcolor="#9852CB"];
+  n94662832863600 -> n94662832863504 
+  n94662832863552 [label="2" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832863600 -> n94662832863552 
+  n94662832863696 -> n94662832863600 
+  n94662832863648 [label="1" shape=ellipse style=filled fillcolor="#B967FF"];
+  n94662832863696 -> n94662832863648 
+  n94662832863744 -> n94662832863696 
+}

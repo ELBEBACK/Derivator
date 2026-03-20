@@ -1,6 +1,7 @@
 #ifdef DEBUG
 #include <stdio.h>
 #endif
+
 #include <stdlib.h>
 
 #include "ast/tree.h"
@@ -10,9 +11,11 @@ Node* node_create(NodeType type, NodeValue value, Node* left, Node* right) {
     
     Node* node_to_create = (Node*) calloc(1, sizeof(Node));
     if (!node_to_create) {
+        
         #ifdef DEBUG
         fprintf(stderr, "Allocation fail in %s at %s:%d\n", __func__, __FILE__, __LINE__);
         #endif
+        
         return NULL;
     }
 
